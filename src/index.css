@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -98,4 +92,28 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #f5f7ff 0%, #e1e9ff 100%);
+}
+
+.bg-gradient-dark-blue {
+  background: #282D5F;
+}
+
+.bg-footer {
+  background-color: #273272;
+}
+
+.text-blue {
+  color: #4169E1;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-blue-700 transition-all;
+}
+
+.btn-outline {
+  @apply border border-primary text-primary px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all;
 }
